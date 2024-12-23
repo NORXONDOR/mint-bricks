@@ -22,13 +22,13 @@ export default function Navbar() {
 				<nav className="flex space-x-6">
 					<Link
 						href="/sell"
-						className="rounded-full p-3 text-4xl font-semibold tracking-tighter hover:bg-black hover:text-white hover:drop-shadow-lg"
+						className="rounded-full p-3 text-4xl font-semibold tracking-tighter transition ease-linear hover:bg-black hover:text-white hover:drop-shadow-lg"
 					>
 						SELL YOUR LEGO
 					</Link>
 					<a
 						href="https://store.bricklink.com/NORX#/shop"
-						className="rounded-full p-3 text-4xl font-semibold tracking-tighter hover:bg-black hover:text-white hover:drop-shadow-lg"
+						className="rounded-full p-3 text-4xl font-semibold tracking-tighter transition ease-linear hover:bg-black hover:text-white hover:drop-shadow-lg"
 					>
 						SHOP
 					</a>

@@ -44,9 +44,15 @@ export default function ImageSlider({ images }: ImageSliderProps) {
 				<div className="w-[10%] text-center">
 					<button
 						onClick={prevImage}
-						className="h-full w-full bg-white bg-opacity-20"
+						className="h-full w-full transition ease-linear hover:bg-white hover:bg-opacity-20"
 					>
-						{/** put icon here */}
+						<div className="relative h-20">
+							<Image
+								src="/prev.svg"
+								layout="fill"
+								alt="previous-button"
+							/>
+						</div>
 					</button>
 				</div>
 				<div className="w-[80%]">
@@ -58,7 +64,7 @@ export default function ImageSlider({ images }: ImageSliderProps) {
 							{images[currentImageIdx].description}
 						</p>
 						<a
-							className="absolute ml-6 mt-[30rem] rounded-full bg-white px-10 py-6 text-left text-6xl drop-shadow-lg hover:bg-black hover:text-white"
+							className="absolute ml-6 mt-[30rem] rounded-full bg-white px-10 py-6 text-left text-6xl drop-shadow-lg transition ease-linear hover:bg-black hover:text-white"
 							href={images[currentImageIdx].link}
 						>
 							Learn more
@@ -68,9 +74,15 @@ export default function ImageSlider({ images }: ImageSliderProps) {
 				<div className="w-[10%] text-center">
 					<button
 						onClick={nextImage}
-						className="h-full w-full bg-white bg-opacity-20"
+						className="h-full w-full transition ease-linear hover:bg-white hover:bg-opacity-20"
 					>
-						{/* put icon here */}
+						<div className="relative h-20">
+							<Image
+								src="/next.svg"
+								layout="fill"
+								alt="previous-button"
+							/>
+						</div>
 					</button>
 				</div>
 			</div>
