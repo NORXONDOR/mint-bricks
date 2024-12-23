@@ -1,5 +1,3 @@
 export default function Separator() {
-    return (
-        <div className="flex bg-black h-px"></div>
-    )
+	return <div className="h-px bg-black" />
 }
