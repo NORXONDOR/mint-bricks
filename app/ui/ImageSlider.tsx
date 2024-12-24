@@ -41,12 +41,12 @@ export default function ImageSlider({ images }: ImageSliderProps) {
 				className="object-cover"
 			/>
 			<div className="relative flex h-full">
-				<div className="w-[10%] text-center">
+				<div className="w-[10%]">
 					<button
 						onClick={prevImage}
-						className="h-full w-full transition ease-linear hover:bg-white hover:bg-opacity-20"
+						className="group grid h-full w-full place-content-center"
 					>
-						<div className="relative h-20">
+						<div className="relative rounded-full bg-white bg-opacity-20 p-10 transition ease-out group-hover:-translate-x-1.5 group-hover:bg-opacity-45">
 							<Image
 								src="/prev.svg"
 								layout="fill"
@@ -74,9 +74,9 @@ export default function ImageSlider({ images }: ImageSliderProps) {
 				<div className="w-[10%] text-center">
 					<button
 						onClick={nextImage}
-						className="h-full w-full transition ease-linear hover:bg-white hover:bg-opacity-20"
+						className="group grid h-full w-full place-content-center"
 					>
-						<div className="relative h-20">
+						<div className="relative rounded-full bg-white bg-opacity-20 p-10 transition ease-out group-hover:translate-x-1.5 group-hover:bg-opacity-45">
 							<Image
 								src="/next.svg"
 								layout="fill"
